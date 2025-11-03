@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color-dark: #2c3e50;
+  --secondary-color: #3498db;
+  --text-color-light: #ecf0f1;
+  --text-color-dark: #333333;
+  --background-color-light: #f4f4f4;
+  --background-color-white: #ffffff;
+
+  --font-heading: 'Merriweather', serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--background-color-light);
+  color: var(--text-color-dark);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+  background-color: var(--primary-color-dark);
+  color: var(--text-color-light);
+  padding: 1rem;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+header h1 {
+  color: var(--text-color-light);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+#course-title {
+  font-size: 1.2rem;
+  font-family: var(--font-body);
+  font-weight: 400;
+  display: block;
+  color: var(--secondary-color);
+}
+
+nav {
+  background-color: var(--primary-color-dark);
+  border-top: 1px solid var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: var(--text-color-light);
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+nav a:active {
+  background-color: var(--secondary-color);
+  color: var(--background-color-white);
+}
+
+main {
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  flex-grow: 1;
+}
+
+main h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--primary-color-dark);
+}
+
+.card {
+  background-color: var(--background-color-white);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.card h2 {
+  background-color: var(--secondary-color);
+  color: var(--background-color-white);
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.card p,
+.card img {
+  padding: 0 1.5rem;
+  margin: 1rem 0;
+}
+
+.card p:first-of-type {
+  margin-top: 1.5rem;
+}
+
+.card h3 {
+  color: var(--secondary-color);
+  border-top: 1px solid var(--background-color-light);
+  padding: 0 1.5rem;
+}
+
+.bio {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.ukraine {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+footer {
+  background-color: var(--primary-color-dark);
+  color: var(--text-color-light);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+#lastModified {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
