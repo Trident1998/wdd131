@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book of Mormon - Top Chapters</title>
+    <meta
+      name="description"
+      content="A class activity to practice DOM manipulation with a list of favorite BOM chapters."
+    />
+    <meta name="author" content="Dmytro Ivanytskyi" />
+    <link rel="stylesheet" href="styles/bom.css" />
+  </head>
+  <body>
+    <h1>📘 Book of Mormon - Top 10 Chapters</h1>
+    <main>
+      <div class="input-group">
+        <label for="favchap">Enter Book and Chapter: </label>
+        <input type="text" id="favchap" placeholder="Alma 5" />
+        <button type="submit">Add Chapter</button>
+      </div>
+
+      <!-- The unordered list where chapters will be displayed -->
+      <ul id="list"></ul>
+    </main>
+
+    <!-- Link to the JavaScript file -->
+    <!-- 'defer' ensures the HTML is parsed before the script runs -->
+    <script src="scripts/bom.js" defer></script>
+  </body>
+</html>
