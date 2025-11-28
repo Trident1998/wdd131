@@ -114,7 +114,7 @@ main {
   padding: 0 1rem;
 }
 
-main h1 {
+main h2 {
   font-family: var(--font-heading);
   color: var(--primary-color);
   text-align: center;
