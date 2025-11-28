@@ -1,0 +1,174 @@
+:root {
+  --primary-color: #225877;
+  --secondary-color: #013a63;
+  --accent-color: #61a5c2;
+  --bg-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --text-color: #333333;
+  --light-text: #f1f1f1;
+
+  --font-heading: 'Merriweather', serif;
+  --font-body: 'Lato', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--secondary-color);
+  color: var(--light-text);
+  padding: 1rem;
+  text-align: center;
+  display: grid;
+  position: relative;
+  grid-template-columns: 5fr 1fr;
+}
+
+header.open {
+  display: block;
+}
+
+#menuButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  background-color: transparent;
+  color: var(--light-text);
+  border: none;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: left;
+}
+
+.title.open {
+  display: none;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+nav.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav a {
+  color: var(--light-text);
+  text-decoration: none;
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav.open a {
+  text-align: left;
+  padding: 0.75rem 1rem;
+}
+
+nav a:hover {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+.temple-details {
+  padding: 0 1rem 1rem 1rem;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.temple-details p {
+  margin: 0.25rem 0;
+  line-height: 1.4;
+}
+
+nav a.active {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  border-bottom: 3px solid var(--primary-color);
+}
+
+main {
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+main h1 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+figure {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+  max-width: 330px;
+}
+
+figure img {
+  width: 330px;
+  height: 220px;
+  display: block;
+}
+
+figure p {
+  font-size: 1rem;
+}
+
+figcaption {
+  padding: 1rem;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  text-align: left;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--light-text);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
