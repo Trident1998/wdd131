@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Thank you for your product review submission. Your feedback helps us improve. This confirmation page tracks your total submitted reviews for WDD 131."
+    />
+    <meta name="author" content="Dmytro Ivnanytskyi" />
+    <title>Review Submitted | WDD 131</title>
+    <link rel="stylesheet" href="styles/review.css" />
+    <script src="./scripts/getdates.js" defer></script>
+    <script src="./scripts/review.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>WDD 131</h1>
+    </header>
+
+    <main>
+      <div class="card">
+        <h1>Thank You!</h1>
+        <p>Your review has been successfully recorded.</p>
+
+        <div class="counter-box">
+          Total Reviews Submitted: <span id="reviewCounter">0</span>
+        </div>
+
+        <br />
+        <a href="form.html" class="back-btn">Submit Another Review</a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Dmytro Ivanytskyi - Ukraine</p>
+      <p id="lastModified"></p>
+    </footer>
+
+    <script></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #1b4965;
+  --secondary-color: #62b6cb;
+  --bg-color: #f0f4f8;
+  --white: #ffffff;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+header,
+footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card {
+  background: var(--white);
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.counter-box {
+  background-color: #e3f2fd;
+  color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: var(--primary-color);
+}
