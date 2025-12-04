@@ -75,3 +75,6 @@ p {
 .back-btn:hover {
   background-color: var(--primary-color);
 }
+
+@media (min-width: 640px) {
+}
