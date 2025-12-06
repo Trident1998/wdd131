@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dmytro Ivanytskyi" />
+    <meta
+      name="description"
+      content="Discover Bukovel, the ultimate resort for relaxation. Enjoy skiing in winter, hiking in summer, and breathtaking views of the Carpathians."
+    />
+    <title>Bukovel: Home</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="stories.html">Stories</a>
+      </nav>
+    </header>
+
+    <div class="hero-slider">
+      <div class="hero-slide active">
+        <img src="images/hero-winter.webp" alt="Winter in Bukovel" />
+      </div>
+      <div class="hero-slide">
+        <img src="images/hero-summer.webp" alt="Summer in Bukovel" />
+      </div>
+
+      <div class="hero-content">
+        <h1>Welcome to Bukovel</h1>
+        <p>Your destination for relaxation in any season</p>
+      </div>
+    </div>
+
+    <main class="home-grid">
+      <section class="carousel-section">
+        <h2>Gallery Highlights</h2>
+
+        <div class="carousel-wrapper">
+          <button class="nav-btn prev" id="prevBtn">&#10094;</button>
+          <div id="home-carousel" class="carousel-container"></div>
+          <button class="nav-btn next" id="nextBtn">&#10095;</button>
+        </div>
+
+        <div class="link-btn-div">
+          <a href="gallery.html" class="btn">View Full Gallery</a>
+        </div>
+      </section>
+
+      <section class="latest-story-section">
+        <h2>Latest Story</h2>
+        <div id="latest-story" class="latest-story-card">
+          <p>Loading...</p>
+        </div>
+        <div class="link-btn-div">
+          <a href="stories.html" class="btn">Read More Stories</a>
+        </div>
+      </section>
+
+      <section class="weather-section">
+        <h2>Resort Weather</h2>
+        <div id="weather-widget" class="weather-card">
+          <div class="weather-loading">Loading weather...</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Bukovel Relax Project. WDD 131.</p>
+    </footer>
+  </body>
+</html>

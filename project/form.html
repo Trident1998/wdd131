@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dmytro Ivanytskyi" />
+    <meta
+      name="description"
+      content="Share your own Bukovel story with our community. Submit your favorite memories and experiences to inspire future travelers to the resort."
+    />
+    <title>Bukovel: Share Story</title>
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="stories.html">Stories</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="form-card">
+        <div class="form-header">
+          <h2>Share Your Story</h2>
+          <p>
+            Tell us about your unforgettable moments in Bukovel. Your experience
+            helps inspire others!
+          </p>
+        </div>
+
+        <form id="storyForm">
+          <div class="form-group">
+            <label for="author">Your Name<span class="asterisk">*</span></label>
+            <input
+              type="text"
+              id="author"
+              name="author"
+              placeholder="e.g. Olena K."
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="title"
+              >Story Title<span class="asterisk">*</span></label
+            >
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="A short, catchy title"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="text"
+              >Your Experience<span class="asterisk">*</span></label
+            >
+            <textarea
+              id="text"
+              name="text"
+              rows="8"
+              placeholder="What did you do? How did you feel?"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-block">Submit Story</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Bukovel Relax Project.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dmytro Ivanytskyi" />
+    <meta
+      name="description"
+      content="Explore the beauty of Bukovel through our photo gallery. Filter by winter snowscapes or vibrant summer views to see the resort's changing seasons."
+    />
+    <title>Bukovel: Gallery</title>
+    <link rel="stylesheet" href="styles/gallery.css" />
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/gallery.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="stories.html">Stories</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Resort Gallery</h2>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterGallery('all', this)">
+          Show All
+        </button>
+        <button class="filter-btn" onclick="filterGallery('winter', this)">
+          Winter
+        </button>
+        <button class="filter-btn" onclick="filterGallery('summer', this)">
+          Summer
+        </button>
+      </div>
+
+      <div id="gallery-grid" class="gallery-grid"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Bukovel Relax Project.</p>
+    </footer>
+  </body>
+</html>
